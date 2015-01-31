@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lease Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="encoding" />
+		<link rel="stylesheet" href="./style/bootstrap.min.css" />
+        <link rel="stylesheet" href="./style/jquery-ui.min.css" />
+        <style>
+            body {
+            background-color: #d3d3d3;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="./js/jQuery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <div class="navbar navbar-inverse navbar-static-top">
+        </div>
+        <div class="container">
+        <div class="jumbotron">
+            <h2>Lease Calculator</h2>
+            <form class="form">
+                <div class="form-group">
+                    <input type="checkbox" name="chk_group1" value="value1" id="c1" /> 10K Miles / Year<br />
+                    <input type="checkbox" name="chk_group1" value="value2" id="c2"checked/> 12K Miles / Year<br />
+                    <input type="checkbox" name="chk_group1" value="value3" id="c3" /> 15K Miles / Year<br />
+                    <br />
+                    <input type="checkbox" name="chk_group2" value="value1" id="c4" /> 1 Year<br />
+                    <input type="checkbox" name="chk_group2" value="value2" id="c5" /> 2 Year<br />
+                    <input type="checkbox" name="chk_group2" value="value3" id="c6"checked /> 3 Year<br />
+                    <br/ >
+                    Start Date: <input type="text" id="startDate" data-role="date">
+                    <br/ >
+					<br/ >
+					Initial Mileage: <input type="number" class="form-control" id="InitialMileage" placeholder="Initial Mileage / By Default 0">
+					<br/ >
+					Current Mileage: <input type="number" class="form-control" id="CurrentMileage" placeholder="Current Mileage / By Default 0">
+					<br/ >
+					Extra Miles: <input type="number" class="form-control" id="ExtraMiles" placeholder="Extra Miles / By Default 0">
+					<br/ >
+					<button type="button" class="btn btn-success" id="calculate">Calculate</button>
+                    <br />
+                    <br />
+					Allowed Miles Per Day: <input type="number" class="form-control" id="AllowedMilesPerDay" placeholder="Allowed Miles Per Day">
+                    <br />
+                    Saved Mileage: <input type="number" class="form-control" id="SavedMileage" placeholder="Saved Mileage">
+                    <br />
+                    Remaining Mileage: <input type="number" class="form-control" id="RemainingMileage" placeholder="Remaining Mileage">
+                    <br />
+                    Average Miles Per Day: <input type="number" class="form-control" id="AverageMilesPerDay" placeholder="Average Miles Per Day">
+                    <br />
+                    Total Miles on Average: <input type="number" class="form-control" id="TotalMilesOnAverage" placeholder="Total Miles on Average">
+                </div>
+            </form>
+			
+        </div>
+    </body>
+	<script src="./js/custom.js"></script> 
+</html>
